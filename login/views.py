@@ -1,5 +1,3 @@
-import json
-
 from django.shortcuts import render, redirect
 from django import forms
 
@@ -16,6 +14,6 @@ def index(request):
         data = request.__dict__['_post']
         data_processing(data['login'], data['password'])
     form = LoginForm()
-    return render(request, 'authorization/login_page.html', {'form': form})
+    return render(request, 'login/login_page.html', {'form': form})
 
 

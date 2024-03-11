@@ -1,4 +1,4 @@
-from authorization.models import Users
+from login.models import Users
 
 
 def data_processing(login, password):
